@@ -9,13 +9,23 @@ public class BusTest {
 
     @Before
     public void before(){
-    bus = new Bus(22);
+    bus = new Bus(22, "Leith");
+
+
    }
 
     @Test
      public void hasRouteNumber(){
         assertEquals(22, bus.getRouteNumber());
-        }
+    }
+    
+    @Test
+     public void hasDestination(){
+        assertEquals("Leith", bus.getDestination());
+    }
+    
+        
+        
 }
 
 
