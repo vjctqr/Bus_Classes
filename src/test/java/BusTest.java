@@ -24,6 +24,17 @@ public class BusTest {
         assertEquals("Leith", bus.getDestination());
     }
     
+    @Test
+    public void busStartsEmpty(){
+        assertEquals(0, bus.passengerCount());
+    }
+    
+//    @Test
+//    public void canAddPassenger(){
+//        bus.addPassenger(person);
+//        assertEquals();
+//    }
+    
         
         
 }
